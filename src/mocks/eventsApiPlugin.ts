@@ -1,6 +1,6 @@
 import type { IncomingMessage, ServerResponse } from "node:http";
 import type { Plugin } from "vite";
-import { getMockEvents } from "../../mocks/eventsMock";
+import { getMockEvents } from "../../api/events";
 
 type RequestWithOriginalUrl = IncomingMessage & {
   originalUrl?: string;
