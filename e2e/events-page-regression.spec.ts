@@ -2,7 +2,7 @@ import { expect, test } from "@playwright/test";
 
 function findSecondPageDesignRequest(requestUrls: URL[]): URL | undefined {
   return requestUrls.find(
-    (url) => url.pathname === "/events" && url.searchParams.get("page") === "2" && url.searchParams.get("q") === "design"
+    (url) => url.pathname === "/api/events" && url.searchParams.get("page") === "2" && url.searchParams.get("q") === "design"
   );
 }
 

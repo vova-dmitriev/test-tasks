@@ -43,10 +43,12 @@ body {
   animation: panel-in 0.45s ease-out;
   display: flex;
   flex-direction: column;
+  height: min(760px, calc(100vh - 4.2rem));
 }
 
 .events-header {
   margin-bottom: 1rem;
+  min-height: 6.3rem;
 }
 
 .events-eyebrow {
@@ -173,8 +175,8 @@ body {
 
 .results-pane {
   margin-top: 1rem;
-  min-height: 22rem;
-  max-height: 52vh;
+  flex: 1;
+  min-height: 0;
   overflow-y: auto;
   padding-right: 0.2rem;
 }
@@ -190,6 +192,8 @@ body {
 .load-more-slot {
   margin-top: 0.7rem;
   min-height: 3.2rem;
+  display: flex;
+  align-items: flex-end;
 }
 
 .event-card {
@@ -295,6 +299,7 @@ body {
   .events-shell {
     padding: 0.9rem;
     border-radius: 12px;
+    height: min(700px, calc(100vh - 3rem));
   }
 
   .events-title {
@@ -305,11 +310,6 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .results-pane {
-    min-height: 16rem;
-    max-height: 46vh;
   }
 
   .event-card {

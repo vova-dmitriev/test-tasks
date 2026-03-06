@@ -1,14 +1,6 @@
 {
   "rewrites": [
     {
-      "source": "/events",
-      "has": [
-        { "type": "query", "key": "page" },
-        { "type": "query", "key": "limit" }
-      ],
-      "destination": "/api/events"
-    },
-    {
       "source": "/events-fix",
       "destination": "/"
     },
